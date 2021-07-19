@@ -1,0 +1,17 @@
+STEPS TO IMPLEMENT THE CIRCUIT BREKAER 
+1. IMPORT THE DEPENDENCY 
+ --- 	<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    <version>2.2.2.RELEASE</version>
+</dependency> 
+--- 
+2. IN THE SERVICE LAYER 
+ create a function which we use incase of service failure
+ @HystrixCommand(fallbackMethod = "getFallBackMethod")
+ --function name
+ getFallBackMethod
+ --design the exception response 
+ thats it 
+ 
+ 
